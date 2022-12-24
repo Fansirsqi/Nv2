@@ -1,0 +1,406 @@
+#
+# Copyright (C) 2013-2016 Zakume
+# Copyright (C) 2020-2022 Re
+#
+# https://game.naruto.re
+#
+
+name = 'Itachi'
+hp = 8000
+hpBar.y = 80
+speed = 225
+defense = 1000
+isArmored = true
+isArmoredBroken = true
+
+
+[Idle]
+frame = [
+    'Itachi_Idle_01',
+    'Itachi_Idle_02',
+    'Itachi_Idle_03',
+    'Itachi_Idle_04',
+    'Itachi_Idle_05',
+    'Itachi_Idle_06',
+    'Itachi_Idle_07',
+]
+
+[Walk]
+frame = [
+    'Itachi_Walk_01',
+    'Itachi_Walk_02',
+    'Itachi_Walk_03',
+    'Itachi_Walk_04',
+    'Itachi_Walk_05',
+    'Itachi_Walk_06',
+]
+
+[Hurt]
+frame = [
+    'setMove = 32',
+    'Itachi_Hurt_01',
+    'Itachi_Hurt_02',
+    'Itachi_Hurt_03',
+    'setSound = Audio/Itachi/Itachi_hurt.ogg',
+]
+
+[AirHurt]
+frame = [
+    'Itachi_AirHurt_01',
+]
+
+[Knockdown]
+frame = [
+    'Itachi_Knockdown_01',
+    'Itachi_Knockdown_02',
+    'setDelay = 10',
+    'Itachi_Knockdown_03',
+    'setDelay = 60',
+    'Itachi_Knockdown_04',
+    'Itachi_Knockdown_05',
+    'Itachi_Knockdown_06',
+]
+
+[Float]
+frame = [
+    'Itachi_Float_01',
+    'setDelay = 10',
+    'Itachi_Float_02',
+    'setDelay = 10',
+    'Itachi_Float_03',
+]
+
+[Dead]
+frame = [
+    'Itachi_Knockdown_01',
+    'Itachi_Knockdown_02',
+    'Itachi_Knockdown_03',
+    'setSound = Audio/Itachi/Itachi_dead.ogg',
+]
+
+[NAttack]
+type = 'nAttack'
+value = 100
+rangeX = 16
+rangeY = 48
+frame = [
+    'Itachi_NAttack_01',
+    'Itachi_NAttack_02',
+    'Itachi_NAttack_03',
+    'setSound = Audio/Effect/kuwu.ogg',
+    'setHit = bl_hit',
+    'Itachi_NAttack_04',
+    'Itachi_NAttack_05',
+    'Itachi_NAttack_06',
+    'setMove = 8',
+    'Itachi_NAttack_07',
+    'setSound = Audio/Effect/combo2.ogg',
+    'setHit = n_hit',
+    'Itachi_NAttack_08',
+    'Itachi_NAttack_09',
+    'Itachi_NAttack_10',
+    'Itachi_NAttack_11',
+    'Itachi_NAttack_12',
+    'Itachi_NAttack_13',
+    'Itachi_NAttack_14',
+    'setMove = 16',
+    'Itachi_NAttack_15',
+    'setSound = Audio/Itachi/Itachi_combo.ogg',
+    'setSound = Audio/Effect/combo3.ogg',
+    'Itachi_NAttack_16',
+    'setHit = l_hit',
+    'Itachi_NAttack_17',
+    
+    'setSound = Audio/Itachi/Itachi_skill2.ogg',
+    'setCmd = setInvincible',
+    'Itachi_Skill02_02',
+    'Itachi_Skill02_03',
+    'setSound = Audio/Effect/kara.ogg',
+    'Itachi_Skill02_05',
+    'setSound = Audio/Effect/kara.ogg',
+    'setHit = a_hit',
+    'setDSound = Audio/Effect/stick_damage.ogg',
+    'setChargeB = 192',
+    'Itachi_Skill02_06',
+    'setDSound = Audio/Effect/stick_damage.ogg',
+    'setHit = a_hit',
+    'Itachi_Skill02_02',
+    'setCmd = reInvincible',
+
+    'setCmd = setGainCKR',
+]
+
+[Skill01]
+type = 'aAttack'
+value = 150
+rangeX = 32
+rangeY = 48
+cd = 15
+combatPoint = 1000
+frame = [
+    'setSound = Audio/Itachi/Itachi_skill2.ogg',
+    'setCmd = setInvincible',
+    'Itachi_Skill02_02',
+    'Itachi_Skill02_03',
+    'setSound = Audio/Effect/kara.ogg',
+    'Itachi_Skill02_05',
+    'setSound = Audio/Effect/kara.ogg',
+    'setHit = a_hit',
+    'setHit = n_hit',
+    'setDSound = Audio/Effect/stick_damage.ogg',
+    'setChargeB = 192',
+    'Itachi_Skill02_06',
+    'setSound = Audio/Effect/kara.ogg',
+    'Itachi_Skill02_05',
+    'setSound = Audio/Effect/kara.ogg',
+    'setHit = a_hit',
+    'setHit = n_hit',
+    'setDSound = Audio/Effect/stick_damage.ogg',
+    'setChargeB = 192',
+    'Itachi_Skill02_06',
+    'setSound = Audio/Effect/kara.ogg',
+    'Itachi_Skill02_05',
+    'setSound = Audio/Effect/kara.ogg',
+    'setHit = a_hit',
+    'setHit = n_hit',
+    'setDSound = Audio/Effect/stick_damage.ogg',
+    'setChargeB = 192',
+    'Itachi_Skill02_06',
+    'setDSound = Audio/Effect/stick_damage.ogg',
+    'setHit = a_hit',
+    'setHit = n_hit',
+    'setHit = f_hit',
+    'Itachi_Skill02_02',
+    'setCmd = reInvincible',
+]
+
+[Skill02]
+type = 'cAttack'
+value = 200
+rangeX = 0
+rangeY = 48
+cd = 20
+combatPoint = 1350
+frame = [
+    'setSound = Audio/Itachi/Itachi_skill1.ogg',
+    'Itachi_Skill01_004',
+    'setDelay = 10',
+    'setSound = Audio/Itachi/Itachi_skill1_1.ogg',
+    'Itachi_Skill01_005',
+    'setSound = Audio/Effect/goukakyu.ogg',
+    'Itachi_Skill01_006',
+    'setHit = a_hit',
+    'setHit = n_hit',
+    'Itachi_Skill01_007',
+    'setHit = a_hit',
+    'setHit = n_hit',
+    'Itachi_Skill01_008',
+    'setSound = Audio/Effect/goukakyu.ogg',
+    'Itachi_Skill01_006',
+    'setHit = a_hit',
+    'setHit = n_hit',
+    'Itachi_Skill01_007',
+    'setHit = a_hit',
+    'setHit = n_hit',
+    'Itachi_Skill01_008',
+    'setSound = Audio/Effect/goukakyu.ogg',
+    'Itachi_Skill01_006',
+    'setHit = a_hit',
+    'Itachi_Skill01_007',
+    'setHit = a_hit',
+    'Itachi_Skill01_008',
+    'setHit = a_hit',
+    'Itachi_Skill01_009',
+    'setHit = a_hit',
+    'Itachi_Skill01_010',
+    'setHit = a_hit',
+    'setHit = f_hit',
+    'setHit = b_hit',
+]
+
+[Skill03]
+type = 'Summon'
+cd = 30
+combatPoint = 1000
+frame = [
+    'setSound = Audio/Itachi/Itachi_skill3.ogg',
+    'Itachi_Skill03_01',
+    'setTrap = Amaterasu',
+    'setSkillEffect = sharingan',
+    'setDelay = 10',
+    'Itachi_Skill03_02',
+    'setDelay = 10',
+    'setSound = Audio/Itachi/Itachi_skill3_1.ogg',
+    'setDelay = 10',
+    'setSound = Audio/Effect/srg.ogg',
+]
+
+[Skill04]
+type = 'Summon'
+value = 225
+rangeX = 256
+rangeY = 128
+combatPoint = 2500
+frame = [
+    'setSound = Audio/Effect/ougis.ogg',
+    'setCmd = setInvincible',
+    'Itachi_Skill04_001',
+    'Itachi_Skill04_002',
+    'setSound = Audio/Itachi/Itachi_skill4.ogg',
+    'setSkillEffect = sharingan',
+    'setDelay = 20',
+    'setSkill = Tsukuyomi',
+    'setCmd = reInvincible',
+
+    
+    'setSound = Audio/Itachi/Itachi_skill1.ogg',
+    'Itachi_Skill01_004',
+    'setDelay = 10',
+    'setSound = Audio/Itachi/Itachi_skill1_1.ogg',
+    'Itachi_Skill01_005',
+    'setSound = Audio/Effect/goukakyu.ogg',
+    'Itachi_Skill01_006',
+    'setHit = a_hit',
+    'Itachi_Skill01_007',
+    'setHit = a_hit',
+    'Itachi_Skill01_008',
+    'setSound = Audio/Effect/goukakyu.ogg',
+    'Itachi_Skill01_006',
+    'setHit = a_hit',
+    'Itachi_Skill01_007',
+    'setHit = a_hit',
+    'Itachi_Skill01_008',
+    'setHit = a_hit',
+    'setHit = n_hit',
+    'Itachi_Skill01_009',
+    'setHit = a_hit',
+    'setHit = n_hit',
+    'Itachi_Skill01_010',
+    'setHit = a_hit',
+    'setHit = n_hit',
+]
+
+[Skill05]
+type = 'cBuff'
+rangeX = 0
+rangeY = 15
+combatPoint = 9000
+frame = [
+    'setSound = Audio/Effect/ougis.ogg',
+    'Itachi_Skill04_001',
+    'Itachi_Skill04_002',
+    'setSound = Audio/Itachi/Itachi_skill4.ogg',
+    'setSkillEffect = sharingan',
+    'setDelay = 20',
+    'setSkill = Tsukuyomi',
+
+    'setSkillEffect = Kujiyose',
+
+    'setSound = Audio/Effect/ougis.ogg',
+    'Itachi_Skill05_03',
+    'setCmd = setInvincible',
+    'Itachi_Skill05_04',
+    'Itachi_Skill05_05',
+    'Itachi_Skill05_06',
+    'setOugis = 10',
+    'Itachi_Skill05_06',
+    'setSound = Audio/Itachi/Itachi_skill5_1.ogg',
+    'setBuff = 17',
+    'setSkill = ItachiSusano',
+    'setCmd = reInvincible',
+]
+[Skill05.OnChange]
+speed = 215
+defense = 7500
+isArmored = true
+lockSkillOnly = true
+lock = [+4, +5]
+map.Idle = 1
+map.Walk = 2
+map.Knockdown = 4
+map.NAttack = 3
+
+[Spc01]
+type = 'aAttack'
+value = 1250
+rangeX = 64
+rangeY = 32
+anim = {base = 'Idle'}
+frame = [
+    'Itachi_Skill10_01',
+    'setDelay = 10',
+    'Itachi_Skill10_02',
+    'setDelay = 10',
+    'Itachi_Skill10_03',
+    'setDelay = 10',
+    'Itachi_Skill10_02',
+    'setDelay = 10',
+    'setHit = n_hit',
+]
+
+[Spc02]
+type = 'aAttack'
+value = 1250
+rangeX = 64
+rangeY = 32
+anim = {base = 'Walk'}
+frame = [
+    'Itachi_Skill11_01',
+    'setDelay = 10',
+    'setHit = n_hit',
+    'Itachi_Skill11_02',
+    'setDelay = 10',
+    'Itachi_Skill11_03',
+    'setDelay = 10',
+    'Itachi_Skill11_04',
+    'setDelay = 10',
+    'setHit = n_hit',
+    'Itachi_Skill11_05',
+    'setDelay = 10',
+    'Itachi_Skill11_06',
+    'setDelay = 10',
+    'Itachi_Skill11_07',
+    'setDelay = 10',
+    'Itachi_Skill11_08',
+    'setDelay = 10',
+    'setHit = n_hit',
+]
+
+[Spc03]
+type = 'nAttack'
+value = 1250
+rangeX = 128
+rangeY = 64
+anim = {base = 'NAttack'}
+frame = [
+    'setSkillAttack = 1',
+    'setSound = Audio/Itachi/Itachi_skill5_2.ogg',
+    'Itachi_Skill10_01',
+    'setDelay = 10',
+    'Itachi_Skill10_02',
+    'setDelay = 10',
+    'Itachi_Skill10_03',
+    'setHit = c_hit',
+    'setHit = n_hit',
+    'setDelay = 10',
+    'Itachi_Skill10_02',
+    'setDelay = 10',
+    'setHit = c_hit',
+    'setHit = n_hit',
+]
+
+[Spc04]
+anim = {base = 'Knockdown'}
+frame = [
+    'Itachi_Skill12_01',
+    'Itachi_Skill12_02',
+    'Itachi_Skill12_03',
+    'Itachi_Skill12_04',
+    'Itachi_Skill12_10',
+    'setDelay = 300',
+    'Itachi_Skill12_05',
+    'Itachi_Skill12_06',
+    'Itachi_Skill12_07',
+    'Itachi_Skill12_08',
+    'Itachi_Skill12_09',
+]

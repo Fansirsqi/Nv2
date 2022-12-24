@@ -1,0 +1,80 @@
+#
+# Copyright (C) 2013-2016 Zakume
+# Copyright (C) 2020-2022 Re
+#
+# https://game.naruto.re
+#
+
+name = 'KotetsuFrog'
+hp = 3000
+hpBar.y = 40
+speed = 160
+
+[Idle]
+frame = [
+    'KotetsuFrog_Idle_01',
+    'KotetsuFrog_Walk_01',
+]
+
+[Walk]
+frame = [
+    'KotetsuFrog_Walk_01',
+    'KotetsuFrog_Walk_02',
+    'setDelay = 10',
+    'KotetsuFrog_Walk_03',
+    'setDelay = 10',
+]
+
+[Hurt]
+frame = [
+    'setMove = 32',
+    'KotetsuFrog_Knockdown_01',
+]
+
+[AirHurt]
+frame = [
+    'KotetsuFrog_Knockdown_01',
+]
+
+[Knockdown]
+frame = [
+    'KotetsuFrog_Knockdown_01',
+    'KotetsuFrog_Knockdown_02',
+    'KotetsuFrog_Knockdown_03',
+    'setDelay = 10',
+    'KotetsuFrog_Knockdown_04',
+    'setDelay = 60',
+    'KotetsuFrog_Idle_01',
+]
+
+[Float]
+frame = [
+    'KotetsuFrog_Float_01',
+    'setDelay = 10',
+    'KotetsuFrog_Knockdown_02',
+    'setDelay = 30',
+]
+
+[Dead]
+frame = [
+    'KotetsuFrog_Knockdown_01',
+    'KotetsuFrog_Knockdown_02',
+    'KotetsuFrog_Knockdown_03',
+    'KotetsuFrog_Knockdown_04',
+]
+
+[NAttack]
+type = 'nAttack'
+value = 20
+rangeX = 8
+rangeY = 8
+frame = [
+    'KotetsuFrog_NAttack_01',
+    'setDelay = 10',
+    'KotetsuFrog_NAttack_02',
+    'setDelay = 10',
+    'KotetsuFrog_NAttack_03',
+    'KotetsuFrog_NAttack_04',
+    'setHit = n_hit',
+    'setDelay = 10',
+]

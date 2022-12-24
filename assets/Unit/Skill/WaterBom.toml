@@ -1,0 +1,42 @@
+#
+# Copyright (C) 2013-2016 Zakume
+# Copyright (C) 2020-2022 Re
+#
+# https://game.naruto.re
+#
+
+name = 'WaterBom'
+
+[Idle]
+frame = [
+    'WaterBom_Move_01',
+]
+
+[NAttack]
+type = 'aAttack'
+value = 250
+rangeX = 16
+rangeY = 48
+frame = [
+    'WaterBom_Move_01',
+    'setHit = c_hit',
+    'setHit = n_hit',
+    'WaterBom_Move_02',
+    'setHit = c_hit',
+    'setHit = bl_hit',
+    'WaterBom_Move_03',
+    'setHit = c_hit',
+    'setHit = n_hit',
+    'WaterBom_Move_04',
+    'setHit = c_hit',
+    'setHit = bl_hit',
+    'WaterBom_Move_05',
+    'setHit = c_hit',
+    'setHit = n_hit',
+    'WaterBom_Move_06',
+    'setHit = c_hit',
+    'setHit = bl_hit',
+    'WaterBom_Move_07',
+    'setHit = f_hit',
+    'setDestroy = 0',
+]

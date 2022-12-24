@@ -1,0 +1,408 @@
+#
+# Copyright (C) 2013-2016 Zakume
+# Copyright (C) 2020-2022 Re
+#
+# https://game.naruto.re
+#
+
+name = 'Nagato'
+hp = 11000
+hpBar.y = 81
+speed = 235
+
+[Idle]
+frame = [
+    'Nagato_Idle_01',
+    'Nagato_Idle_02',
+    'Nagato_Idle_03',
+    'Nagato_Idle_04',
+    'Nagato_Idle_05',
+    'Nagato_Idle_06',
+    'Nagato_Idle_07',
+    'Nagato_Idle_08',
+]
+
+[Walk]
+frame = [
+    'Nagato_Walk_01',
+    'Nagato_Walk_02',
+    'Nagato_Walk_03',
+    'Nagato_Walk_04',
+    'Nagato_Walk_05',
+    'Nagato_Walk_06',
+]
+
+[Hurt]
+frame = [
+    'setMove = 32',
+    'Nagato_Hurt_01',
+    'Nagato_Hurt_02',
+]
+
+[AirHurt]
+frame = [
+    'Nagato_AirHurt_01',
+]
+
+[Knockdown]
+frame = [
+    'Nagato_Knockdown_01',
+    'setDelay = 10',
+    'Nagato_Knockdown_02',
+    'setDelay = 60',
+    'Nagato_Knockdown_03',
+    'Nagato_Knockdown_04',
+    'Nagato_Knockdown_05',
+]
+
+[Float]
+frame = [
+    'Nagato_Float_01',
+    'setDelay = 10',
+    'Nagato_Float_02',
+    'setDelay = 10',
+    'Nagato_Float_03',
+]
+
+[Dead]
+frame = [
+    'Nagato_Knockdown_01',
+    'Nagato_Knockdown_02',
+]
+
+[NAttack]
+type = 'nAttack'
+value = 125
+rangeX = 38
+rangeY = 36
+frame = [
+    'Nagato_NAttack_01',
+    'Nagato_NAttack_02',
+    'Nagato_NAttack_03',
+    'Nagato_NAttack_04',
+    'Nagato_NAttack_05',
+    'setSound = Audio/Effect/combo1.ogg',
+    'setHit = n_hit',
+    'Nagato_NAttack_06',
+    'Nagato_NAttack_07',
+    'Nagato_NAttack_08',
+    'Nagato_NAttack_09',
+    'setMove = 8',
+    'Nagato_NAttack_10',
+    'Nagato_NAttack_11',
+    'setSound = Audio/Effect/combo2.ogg',
+    'setHit = n_hit',
+    'Nagato_NAttack_12',
+    'Nagato_NAttack_13',
+    'Nagato_NAttack_14',
+    'Nagato_NAttack_15',
+    'Nagato_NAttack_16',
+    'Nagato_NAttack_17',
+    'setSound = Audio/Nagato/Nagato_combo.ogg',
+    'setMove = 16',
+    'Nagato_NAttack_18',
+    'Nagato_NAttack_19',
+    'setHit = l_hit',
+    'setSound = Audio/Effect/combo3.ogg',
+    'Nagato_NAttack_20',
+    
+    'Nagato_Skill02_01',
+    'setSound = Audio/Nagato/Nagato_skill2.ogg',
+    'Nagato_Skill02_02',
+    'setHit = ac_hit',
+    'setHit = l_hit',
+    'setHit = n_hit',
+    'Nagato_Skill02_03',
+    'setHit = l_hit',
+    'Nagato_Skill02_04',
+    'setHit = l_hit',
+    'Nagato_Skill02_05',
+    'setHit = l_hit',
+    'setHit = n_hit',
+    'setHit = ac_hit',
+    'Nagato_Skill02_06',
+    'setHit = l_hit',
+    'Nagato_Skill02_07',
+    'setHit = l_hit',
+    'Nagato_Skill02_08',
+    'setHit = l_hit',
+    'setHit = n_hit',
+    'setHit = c_hit',
+    'setSound = Audio/Nagato/Nagato_skill2_1.ogg',
+    'Nagato_Skill02_11',
+    'setHit = l_hit',
+    'Nagato_Skill02_12',
+    'setDelay = 15',
+    'setHit = f_hit',
+    'setHit = l_hit',
+    'setHit = ac_hit',
+    'setHit = n_hit',
+
+    'setSound = Audio/Nagato/Nagato_skill3.ogg',
+    'setCmd = setInvincible',
+    'Nagato_Skill03_01',
+    'setDelay = 4',
+    'Nagato_Skill03_02',
+    'setHit = n_hit',
+    'setHit = ac_hit',
+    'setHit = o_hit',
+    'setDelay = 4',
+    'Nagato_Skill03_03',
+    'setHit = n_hit',
+    'setHit = ac_hit',
+    'setHit = o_hit',
+    'setDelay = 4',
+    'Nagato_Skill03_03',
+    'setHit = n_hit',
+    'setHit = ac_hit',
+    'setHit = o_hit',
+    'setHit = f_hit',
+    'setDelay = 4',
+    'setCmd = reInvincible',
+
+    'setCmd = setGainCKR',
+]
+
+[Skill01]
+type = 'sBuff'
+rangeX = 0
+rangeY = 15
+cd = 25
+frame = [
+    'setSound = Audio/Nagato/Nagato_skill1.ogg',
+    'Nagato_Skill01_01',
+    'setDelay = 10',
+    'Nagato_Skill01_02',
+    'setDelay = 10',
+    'Nagato_Skill01_03',
+    'setDelay = 10',
+    'Nagato_Skill01_04',
+    'setDelay = 10',
+    'Nagato_Skill01_05',
+    'setDelay = 10',
+    'Nagato_Skill01_02',
+    'setCmd = setRevive',
+    'setDelay = 20',
+    'setBuff = 300',
+]
+
+[Skill02]
+type = 'abAttack'
+value = 375
+rangeX = 128
+rangeY = 64
+cd = 25
+frame = [
+    'Nagato_Skill02_01',
+    'setSound = Audio/Nagato/Nagato_skill2.ogg',
+    'Nagato_Skill02_02',
+    'setHit = s_hit',
+    'setHit = l_hit',
+    'setHit = n_hit',
+    'setHit = ac_hit',
+    'Nagato_Skill02_03',
+    'setHit = s_hit',
+    'setHit = l_hit',
+    'setHit = n_hit',
+    'setHit = ac_hit',
+    'Nagato_Skill02_04',
+    'setHit = s_hit',
+    'setHit = l_hit',
+    'setHit = n_hit',
+    'setHit = ac_hit',
+    'Nagato_Skill02_05',
+    'setHit = s_hit',
+    'setHit = l_hit',
+    'setHit = n_hit',
+    'setHit = ac_hit',
+    'setHit = ab_hit',
+    'Nagato_Skill02_06',
+    'setHit = s_hit',
+    'setHit = l_hit',
+    'setHit = n_hit',
+    'setHit = ac_hit',
+    'Nagato_Skill02_07',
+    'setHit = ac_hit',
+    'setHit = s_hit',
+    'setHit = l_hit',
+    'setHit = n_hit',
+    'setHit = ac_hit',
+    'Nagato_Skill02_08',
+    'setHit = f_hit',
+    'setHit = n_hit',
+    'setHit = ac_hit',
+    'Nagato_Skill02_09',
+    'Nagato_Skill02_10',
+    'setHit = n_hit',
+    'setHit = ac_hit',
+    'setHit = f_hit',
+    'setSound = Audio/Nagato/Nagato_skill2_1.ogg',
+    'Nagato_Skill02_11',
+    'setHit = f_hit',
+    'setHit = n_hit',
+    'setHit = ac_hit',
+    'Nagato_Skill02_12',
+    'setDelay = 15',
+
+    'setCmd = setGainCKR',
+    'setCmd = setGainCKR',
+    'setCmd = setGainCKR',
+]
+
+[Skill03]
+type = 'aAttack'
+value = 375
+rangeX = 128
+rangeY = 64
+cd = 25
+frame = [
+    'setSound = Audio/Nagato/Nagato_skill3.ogg',
+    'setCmd = setInvincible',
+    'Nagato_Skill03_01',
+    'setDelay = 4',
+    'Nagato_Skill03_02',
+    'setHit = n_hit',
+    'setHit = ac_hit',
+    'setHit = o_hit',
+    'setDelay = 4',
+    'Nagato_Skill03_03',
+    'setHit = n_hit',
+    'setHit = ac_hit',
+    'setHit = o_hit',
+    'setDelay = 4',
+    'Nagato_Skill03_03',
+    'setHit = n_hit',
+    'setHit = ac_hit',
+    'setHit = o_hit',
+    'setDelay = 4',
+    'Nagato_Skill03_04',
+    'setHit = n_hit',
+    'setHit = ac_hit',
+    'setHit = o_hit',
+    'setDelay = 4',
+    'Nagato_Skill03_04',
+    'setHit = n_hit',
+    'setHit = ac_hit',
+    'setHit = o_hit',
+    'setDelay = 4',
+    'Nagato_Skill03_04',
+    'setHit = n_hit',
+    'setHit = ac_hit',
+    'setHit = o_hit',
+    'setDelay = 4',
+    'Nagato_Skill03_05',
+    'setHit = n_hit',
+    'setHit = ac_hit',
+    'setHit = o_hit',
+    'setDelay = 4',
+    'Nagato_Skill03_05',
+    'setHit = n_hit',
+    'setHit = ac_hit',
+    'setHit = o_hit',
+    'setDelay = 4',
+    'Nagato_Skill03_05',
+    'setHit = n_hit',
+    'setHit = ac_hit',
+    'setHit = o_hit',
+    'setDelay = 4',
+    'Nagato_Skill03_05',
+    'setHit = n_hit',
+    'setHit = ac_hit',
+    'setHit = o_hit',
+    'setHit = f_hit',
+    'setDelay = 4',
+    'setCmd = reInvincible',
+]
+
+[Skill04]
+type = 'oAttack'
+value = 355
+rangeX = 138
+rangeY = 64
+frame = [
+    'setSound = Audio/Effect/ougis.ogg',
+    'Nagato_Skill04_01',
+    'setMove = 8',
+    'Nagato_Skill04_02',
+    'setSound = Audio/Nagato/Nagato_skill4.ogg',
+    'Nagato_Skill04_03',
+    'Nagato_Skill04_04',
+    'setSkill = JibakuEX',
+    'Nagato_Skill04_05',
+    'Nagato_Skill04_06',
+
+    'setSound = Audio/Nagato/Nagato_skill3.ogg',
+    'setCmd = setInvincible',
+    'Nagato_Skill03_01',
+    'setDelay = 4',
+    'Nagato_Skill03_02',
+    'setHit = n_hit',
+    'setHit = ac_hit',
+    'setHit = o_hit',
+    'setDelay = 4',
+    'Nagato_Skill03_03',
+    'setHit = n_hit',
+    'setHit = ac_hit',
+    'setHit = o_hit',
+    'setDelay = 4',
+    'Nagato_Skill03_03',
+    'setHit = n_hit',
+    'setHit = ac_hit',
+    'setHit = o_hit',
+    'setDelay = 4',
+    'Nagato_Skill03_04',
+    'setHit = n_hit',
+    'setHit = ac_hit',
+    'setHit = o_hit',
+    'setDelay = 4',
+    'Nagato_Skill03_04',
+    'setHit = n_hit',
+    'setHit = ac_hit',
+    'setHit = o_hit',
+    'setDelay = 4',
+    'Nagato_Skill03_05',
+    'setHit = n_hit',
+    'setHit = ac_hit',
+    'setHit = o_hit',
+    'setDelay = 4',    
+    'Nagato_Skill03_05',
+    'setHit = n_hit',
+    'setHit = ac_hit',
+    'setHit = o_hit',
+    'setHit = f_hit',
+    'setDelay = 4',
+    'setCmd = reInvincible',
+
+    'setCmd = setGainCKR',
+    'setCmd = setGainCKR',
+]
+
+[Skill05]
+type = 'oAttack'
+value = 375
+rangeX = 48
+rangeY = 48
+frame = [
+    'setSound = Audio/Effect/ougis.ogg',
+    'Nagato_Skill05_01',
+    'setCmd = setInvincible',
+    'setOugis = 10',
+    'Nagato_Skill05_02',
+    'Nagato_Skill05_03',
+    'Nagato_Skill05_04',
+    'Nagato_Skill05_05',
+    'Nagato_Skill05_06',
+    'Nagato_Skill05_07',
+    'Nagato_Skill05_09',
+    'setSound = Audio/Nagato/Nagato_skill5.ogg',
+    'setDelay = 10',
+    'Nagato_Skill05_10',
+    'setDelay = 10',
+    'Nagato_Skill05_11',
+    'setSkillEffect = Kujiyose',
+    'setClone = 0',
+    'setDelay = 20',
+    'setCmd = reInvincible',
+
+    'setCmd = addHP',
+]

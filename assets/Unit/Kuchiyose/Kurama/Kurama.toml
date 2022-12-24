@@ -1,0 +1,44 @@
+#
+# Copyright (C) 2013-2016 Zakume
+# Copyright (C) 2020-2022 Re
+#
+# https://game.naruto.re
+#
+
+name = 'Kurama'
+hp = 8000
+hpBar.y = 75
+speed = 224
+defense = 5000
+isArmored = true
+isArmoredBroken = true
+
+[Idle]
+frame = [
+    'Kurama_Idle_001',
+]
+
+[Walk]
+frame = [
+    'Kurama_Walk_001',
+    'Kurama_Walk_002',
+    'Kurama_Walk_003',
+]
+
+[NAttack]
+type = 'cAttack'
+value = 500
+rangeX = 0
+rangeY = 48
+frame = [
+    'Kurama_NAttack_001',
+    'setSound = Audio/RikudoNaruto/Kurama_combo.ogg',
+    'setDelay = 10',
+    'Kurama_NAttack_002',
+    'setHit = c_hit',
+    'setSound = Audio/Effect/break_sound2.ogg',
+    'Kurama_NAttack_003',
+    'Kurama_NAttack_004',
+    'setDelay = 10',
+    'Kurama_NAttack_005',
+]

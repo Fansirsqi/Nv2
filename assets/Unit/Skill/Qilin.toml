@@ -1,0 +1,41 @@
+#
+# Copyright (C) 2013-2016 Zakume
+# Copyright (C) 2020-2022 Re
+#
+# https://game.naruto.re
+#
+
+name = 'Qilin'
+
+[Idle]
+frame = [
+    'Qilin_Move_001',
+]
+
+[NAttack]
+type = 'aAttack'
+value = 1000
+rangeX = 0
+rangeY = 48
+frame = [
+    'Qilin_Move_001',
+    'setHit = bc_hit',
+    'Qilin_Move_002',
+    'setHit = bc_hit',
+    'Qilin_Move_003',
+    'setHit = bc_hit',
+    'Qilin_Move_004',
+    'setHit = bc_hit',
+    'Qilin_Move_005',
+    'setHit = bc_hit',
+    'Qilin_Move_006',
+    'setSound = Audio/Sasuke/Sasuke_skill4_1.ogg',
+    'Qilin_Move_007',
+    'setHit = bf_hit',
+    'Qilin_Move_008',
+    'setHit = bf_hit',
+    'Qilin_Move_009',
+    'setHit = bf_hit',
+    'Qilin_Move_010',
+    'setDestroy = 0',
+]

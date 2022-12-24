@@ -1,0 +1,33 @@
+#
+# Copyright (C) 2013-2016 Zakume
+# Copyright (C) 2020-2022 Re
+#
+# https://game.naruto.re
+#
+
+name = 'SandHand'
+
+[Idle]
+frame = [
+    'SandHand_Move_001',
+]
+
+[NAttack]
+type = 'cAttack'
+value = 500
+rangeX = 0
+rangeY = 48
+frame = [
+    'setCmd = findTarget',
+    'setCmd = setTransport',
+    'SandHand_Move_001',
+    'SandHand_Move_002',
+    'SandHand_Move_003',
+    'SandHand_Move_005',
+    'SandHand_Move_006',
+    'setHit = c_hit',
+    'setHit = b_hit',
+    'setHit = t_hit',
+    'setDSound = Audio/Effect/damage_i.ogg',
+    'setDestroy = 0',
+]

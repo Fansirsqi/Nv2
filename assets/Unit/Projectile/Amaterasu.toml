@@ -1,0 +1,39 @@
+#
+# Copyright (C) 2013-2016 Zakume
+# Copyright (C) 2020-2022 Re
+#
+# https://game.naruto.re
+#
+
+name = 'Amaterasu'
+
+[Idle]
+frame = [
+    'Amaterasu_Move_01',
+]
+
+[Dead]
+anim = {loop = true}
+frame = [
+    'Amaterasu_Move_04',
+    'Amaterasu_Move_05',
+    'Amaterasu_Move_06',
+]
+
+[NAttack]
+type = 'aAttack'
+value = 17
+rangeX = 1
+rangeY = 48
+anim = {loop = true}
+frame = [
+    'Amaterasu_Move_01',
+    'setHit = a_hit',
+    'setHit = bl_hit',
+    'setHit = n_hit',
+    'Amaterasu_Move_02',
+    'Amaterasu_Move_03',
+    'setHit = a_hit',
+    'setHit = bl_hit',
+    'setHit = n_hit',
+]

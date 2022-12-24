@@ -1,0 +1,37 @@
+#
+# Copyright (C) 2013-2016 Zakume
+# Copyright (C) 2020-2022 Re
+#
+# https://game.naruto.re
+#
+
+name = 'Steam'
+
+[Idle]
+frame = [
+    'Steam_Move_001',
+]
+
+[NAttack]
+type = 'aAttack'
+value = 500
+rangeX = 0
+rangeY = 48
+frame = [
+    'Steam_Move_001',
+    'setHit = ac_hit',
+    'setHit = bl_hit',
+    'Steam_Move_002',
+    'Steam_Move_003',
+    'setHit = ac_hit',
+    'setHit = bl_hit',
+    'Steam_Move_004',
+    'Steam_Move_005',
+    'setHit = ac_hit',
+    'setHit = bl_hit',
+    'Steam_Move_006',
+    'Steam_Move_007',
+    'setHit = ac_hit',
+    'setHit = bl_hit',
+    'setDestroy = 0',
+]

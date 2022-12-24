@@ -1,0 +1,42 @@
+#
+# Copyright (C) 2013-2016 Zakume
+# Copyright (C) 2020-2022 Re
+#
+# https://game.naruto.re
+#
+
+name = 'Shark2'
+
+[Idle]
+frame = [
+    'Shark2_Move_001',
+]
+
+[NAttack]
+type = 'aAttack'
+value = 200
+rangeX = 4
+rangeY = 48
+frame = [
+    'setSound = Audio/Effect/suiryudan.ogg',
+    'Shark2_Move_001',
+    'Shark2_Move_002',
+    'setHit = c_hit',
+    'setHit = l_hit',
+    'Shark2_Move_003',
+    'Shark2_Move_004',
+    'setHit = c_hit',
+    'setHit = o_hit',
+    'Shark2_Move_005',
+    'Shark2_Move_006',
+    'setHit = c_hit',
+    'setHit = l_hit',
+    'Shark2_Move_003',
+    'Shark2_Move_004',
+    'setHit = c_hit',
+    'setHit = o_hit',
+    'Shark2_Move_005',
+    'Shark2_Move_006',
+    'setHit = c_hit',
+    'setDestroy = 0',
+]

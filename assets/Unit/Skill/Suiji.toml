@@ -1,0 +1,30 @@
+#
+# Copyright (C) 2013-2016 Zakume
+# Copyright (C) 2020-2022 Re
+#
+# https://game.naruto.re
+#
+
+name = 'Suiji'
+
+[Idle]
+frame = [
+    'Suiji_Move_001',
+]
+
+[NAttack]
+type = 'aAttack'
+value = 888
+rangeX = 0
+rangeY = 48
+frame = [
+    'Suiji_Move_001',
+    'setHit = b_hit',
+    'Suiji_Move_002',
+    'setHit = ac_hit',
+    'Suiji_Move_003',
+    'setHit = b_hit',
+    'Suiji_Move_004',
+    'setHit = ac_hit',
+    'setDestroy = 0',
+]

@@ -1,0 +1,515 @@
+#
+# Copyright (C) 2013-2016 Zakume
+# Copyright (C) 2020-2022 Re
+#
+# https://game.naruto.re
+#
+
+name = 'ImmortalSasuke'
+hp = 10500
+hpBar.y = 74
+speed = 224
+
+[Idle]
+frame = [
+    'ImmortalSasuke_Idle_01',
+    'ImmortalSasuke_Idle_02',
+    'ImmortalSasuke_Idle_03',
+    'ImmortalSasuke_Idle_04',
+
+    'ImmortalSasuke_Idle_01',
+    'ImmortalSasuke_Idle_02',
+    'ImmortalSasuke_Idle_03',
+    'ImmortalSasuke_Idle_04',
+
+    'ImmortalSasuke_Skill11_01',
+    'ImmortalSasuke_Skill11_02',
+    'setDelay = 5',
+    'ImmortalSasuke_Skill11_03',
+    'setDelay = 5',
+    'ImmortalSasuke_Skill11_02',
+    'setDelay = 5',
+    'ImmortalSasuke_Skill11_01',
+    'setDelay = 5',
+    'ImmortalSasuke_Skill11_02',
+    'setDelay = 5',
+    'ImmortalSasuke_Skill11_03',
+    'setDelay = 5',
+]
+
+[Walk]
+frame = [
+    'ImmortalSasuke_Walk_01',
+    'ImmortalSasuke_Walk_02',
+    'ImmortalSasuke_Walk_03',
+    'ImmortalSasuke_Walk_04',
+    'ImmortalSasuke_Walk_05',
+    'ImmortalSasuke_Walk_06',
+
+    'ImmortalSasuke_Skill12_01',
+    'setDelay = 5',
+    'ImmortalSasuke_Skill12_02',
+    'setDelay = 5',
+    'ImmortalSasuke_Skill12_03',
+    'setDelay = 5',
+    'ImmortalSasuke_Skill12_04',
+    'setDelay = 5',
+    'ImmortalSasuke_Skill12_05',
+    'setDelay = 5',
+    'ImmortalSasuke_Skill12_06',
+    'setDelay = 5',
+    'ImmortalSasuke_Skill12_01',
+    'setDelay = 5',
+    'ImmortalSasuke_Skill12_02',
+    'setDelay = 5',
+    'ImmortalSasuke_Skill12_03',
+    'setDelay = 5',
+    'ImmortalSasuke_Skill12_04',
+    'setDelay = 5',
+    'ImmortalSasuke_Skill12_05',
+    'setDelay = 5',
+    'ImmortalSasuke_Skill12_06',
+    'setDelay = 5',
+]
+
+[Hurt]
+frame = [
+    'setMove = 32',
+    'ImmortalSasuke_Hurt_01',
+    'ImmortalSasuke_Hurt_02',
+    'setSound = Audio/Sasuke/Sasuke_hurt.ogg',
+]
+
+[AirHurt]
+frame = [
+    'ImmortalSasuke_AirHurt_01',
+]
+
+[Knockdown]
+frame = [
+    'ImmortalSasuke_Knockdown_01',
+    'setDelay = 10',
+    'ImmortalSasuke_Knockdown_02',
+    'setDelay = 60',
+    'ImmortalSasuke_Knockdown_03',
+    'ImmortalSasuke_Knockdown_04',
+    'ImmortalSasuke_Knockdown_05',
+    'ImmortalSasuke_Knockdown_06',
+]
+
+[Float]
+frame = [
+    'ImmortalSasuke_Float_01',
+    'setDelay = 10',
+    'ImmortalSasuke_Float_02',
+    'setDelay = 10',
+    'ImmortalSasuke_Float_03',
+]
+
+[Dead]
+frame = [
+    'ImmortalSasuke_Knockdown_01',
+    'ImmortalSasuke_Knockdown_02',
+    'ImmortalSasuke_Knockdown_03',
+    'setSound = Audio/Sasuke/Sasuke_dead.ogg',
+]
+
+[NAttack]
+type = 'nAttack'
+value = 150
+rangeX = 16
+rangeY = 48
+frame = [
+    'ImmortalSasuke_NAttack_01',
+    'ImmortalSasuke_NAttack_02',
+    'setDelay = 10',
+    'ImmortalSasuke_NAttack_03',
+    'setSound = Audio/Effect/kong.ogg',
+    'setDelay = 10',
+    'ImmortalSasuke_NAttack_04',
+    'setHit = n_hit',
+    'ImmortalSasuke_NAttack_05',
+    'ImmortalSasuke_NAttack_06',
+    'setMove = 8',
+    'ImmortalSasuke_NAttack_07',
+    'ImmortalSasuke_NAttack_08',
+    'setHit = n_hit',
+    'setSound = Audio/Effect/kong.ogg',
+    'ImmortalSasuke_NAttack_09',
+    'ImmortalSasuke_NAttack_10',
+    'ImmortalSasuke_NAttack_11',
+    'ImmortalSasuke_NAttack_12',
+    'setSound = Audio/Sasuke/Sasuke_combo.ogg',
+    'setMove = 16',
+    'ImmortalSasuke_NAttack_13',
+    'setHit = bl_hit',
+    'setSound = Audio/Effect/kong.ogg',
+    'ImmortalSasuke_NAttack_14',
+    'ImmortalSasuke_NAttack_15',
+    'ImmortalSasuke_NAttack_16',
+    'setSound = Audio/ImmortalSasuke/ImmortalSasuke_skill1_1.ogg',
+    'ImmortalSasuke_Skill01_01',
+    'setSound = Audio/ImmortalSasuke/ImmortalSasuke_skill1_2.ogg',
+    'ImmortalSasuke_Skill01_02',
+    'setChargeB = 196',
+    'ImmortalSasuke_Skill01_03',
+    'ImmortalSasuke_Skill01_04',
+    'setHit = bc_hit',
+    'ImmortalSasuke_Skill01_05',
+    'ImmortalSasuke_Skill01_06',
+    'setHit = bc_hit',
+    
+    'setSound = Audio/Effect/ougis.ogg',
+    'setCmd = findTarget',
+    'setCmd = setTransport',
+    'setCmd = setInvincible',
+    'ImmortalSasuke_Skill04_01',
+    'ImmortalSasuke_Skill04_02',
+    'setSkillEffect = sharingan4',
+    'ImmortalSasuke_Skill04_03',
+    'setSound = Audio/ImmortalSasuke/ImmortalSasuke_skill4.ogg',
+    'setDelay = 20',
+    'ImmortalSasuke_Skill04_04',
+    'setCmd = findTarget',
+    'setSound = Audio/Effect/srg.ogg',
+    'ImmortalSasuke_Skill04_05',
+    'setCmd = setTransport',
+    'ImmortalSasuke_Skill04_06',
+    'ImmortalSasuke_Skill04_07',
+    'ImmortalSasuke_Skill04_08',
+    'ImmortalSasuke_Skill04_09',
+    'setHit = b_hit',
+    'setDSound = Audio/Effect/blade_damage.ogg',
+    'ImmortalSasuke_Skill04_10',    
+    'setCmd = reInvincible',
+
+    'setCmd = setGainCKR',
+]
+
+[Skill01]
+type = 'aAttack'
+value = 1000
+rangeX = 48
+rangeY = 48
+cd = 20
+combatPoint = 2050
+frame = [
+    'setSound = Audio/Effect/ougis.ogg',
+    'ImmortalSasuke_Skill04_01',
+    'ImmortalSasuke_Skill04_02',
+    'setSkillEffect = sharingan4',
+    'ImmortalSasuke_Skill04_03',
+    'setSound = Audio/ImmortalSasuke/ImmortalSasuke_skill4.ogg',
+    'setDelay = 20',
+    'ImmortalSasuke_Skill04_04',
+    'setCmd = findTarget',
+    'setSound = Audio/Effect/srg.ogg',
+    'ImmortalSasuke_Skill04_05',
+    'setCmd = setTransport',
+    'ImmortalSasuke_Skill04_06',
+    'ImmortalSasuke_Skill04_07',
+    'ImmortalSasuke_Skill04_08',
+    'ImmortalSasuke_Skill04_09',
+    'setHit = b_hit',
+    'setDSound = Audio/Effect/blade_damage.ogg',
+    'ImmortalSasuke_Skill04_10',    
+
+    'setSound = Audio/ImmortalSasuke/ImmortalSasuke_skill1_1.ogg',
+    'ImmortalSasuke_Skill01_01',
+    'setSound = Audio/ImmortalSasuke/ImmortalSasuke_skill1_2.ogg',
+    'ImmortalSasuke_Skill01_02',
+    'setChargeB = 196',
+    'ImmortalSasuke_Skill01_03',
+    'ImmortalSasuke_Skill01_04',
+    'setHit = bc_hit',
+    'ImmortalSasuke_Skill01_05',
+    'ImmortalSasuke_Skill01_06',
+
+    'setCmd = setInvincible',
+
+    'SasukeSusano_Move_04',
+    'SasukeSusano_Move_05',
+    'SasukeSusano_Move_06',
+    'setDelay = 10',
+    'SasukeSusano_Move_07',
+    'SasukeSusano_Move_08',
+    'setDelay = 20',
+
+    'setCmd = reInvincible',
+]
+
+[Skill02]
+type = 'cAttack'
+value = 500
+rangeX = 48
+rangeY = 48
+cd = 25
+combatPoint = 2550
+frame = [
+    'setSound = Audio/ImmortalSasuke/ImmortalSasuke_skill1_1.ogg',
+    'ImmortalSasuke_Skill01_01',
+    'setSound = Audio/ImmortalSasuke/ImmortalSasuke_skill1_2.ogg',
+    'ImmortalSasuke_Skill01_02',
+    'setChargeB = 196',
+    'ImmortalSasuke_Skill01_03',
+    'ImmortalSasuke_Skill01_04',
+    'setHit = bc_hit',
+    'ImmortalSasuke_Skill01_05',
+    'ImmortalSasuke_Skill01_06',
+    'setHit = bc_hit',
+    
+    'ImmortalSasuke_Skill02_01',
+    'setSound = Audio/ImmortalSasuke/ImmortalSasuke_skill2.ogg',
+    'ImmortalSasuke_Skill02_02',
+    'ImmortalSasuke_Skill02_03',
+    'setSound = Audio/Effect/thunder_effect.ogg',
+    'ImmortalSasuke_Skill02_04',
+    'setHit = bc_hit',
+    'setDelay = 10',
+    'ImmortalSasuke_Skill02_05',
+    'setHit = bc_hit',
+    'ImmortalSasuke_Skill02_05',
+    'setHit = bc_hit',
+    'ImmortalSasuke_Skill02_05',
+    'setHit = bc_hit',
+    'ImmortalSasuke_Skill02_05',
+    'setHit = bc_hit',
+    'ImmortalSasuke_Skill02_06',
+    'setHit = bc_hit',
+    'ImmortalSasuke_Skill02_06',
+    'setHit = bc_hit',
+    'ImmortalSasuke_Skill02_07',
+    'setHit = bc_hit',
+    'ImmortalSasuke_Skill02_07',
+    'setHit = bc_hit',
+]
+
+[Skill03]
+type = 'tBuff'
+value = 500
+rangeX = 48
+rangeY = 15
+cd = 35
+frame = [
+    'setSound = Audio/ImmortalSasuke/ImmortalSasuke_skill3.ogg',
+    'setCmd = setInvincible',
+    'ImmortalSasuke_Skill03_01',
+    'ImmortalSasuke_Skill03_02',
+    'setSkillEffect = sharingan4',
+    'setTrap = Amaterasu',
+    'setSound = Audio/Effect/srg2.ogg',
+    'ImmortalSasuke_Skill03_03',
+    'setDelay = 20',
+    'ImmortalSasuke_Skill03_04',
+    'setCmd = reInvincible',
+    'setDelay = 30',
+    'setBuff = 30',
+    
+    'ImmortalSasuke_Skill02_01',
+    'setSound = Audio/ImmortalSasuke/ImmortalSasuke_skill2.ogg',
+    'ImmortalSasuke_Skill02_02',
+    'ImmortalSasuke_Skill02_03',
+    'setSound = Audio/Effect/thunder_effect.ogg',
+    'ImmortalSasuke_Skill02_04',
+    'setHit = bc_hit',
+    'setDelay = 10',
+    'ImmortalSasuke_Skill02_05',
+    'ImmortalSasuke_Skill02_05',
+    'setHit = bc_hit',
+    'ImmortalSasuke_Skill02_05',    
+    'setHit = bc_hit',
+    'ImmortalSasuke_Skill02_06',
+    'setHit = bc_hit',
+    'ImmortalSasuke_Skill02_06',
+    'setHit = bc_hit',
+    'ImmortalSasuke_Skill02_07',
+]
+[Skill03.OnChange]
+isTaunt = true
+map.Hurt = 1
+
+[Skill04]
+type = 'aAttack'
+value = 150
+rangeX = 48
+rangeY = 48
+combatPoint = 1250
+frame = [
+    'setSound = Audio/Effect/ougis.ogg',
+    'setCmd = setInvincible',
+    'ImmortalSasuke_Skill04_01',
+    'ImmortalSasuke_Skill04_02',
+    'setSkillEffect = sharingan4',
+    'ImmortalSasuke_Skill04_03',
+    'setSound = Audio/ImmortalSasuke/ImmortalSasuke_skill4.ogg',
+    'setDelay = 20',
+    'ImmortalSasuke_Skill04_04',
+    'setCmd = findTarget',
+    'setTrap = Amaterasu',
+    'setSound = Audio/Effect/srg.ogg',
+    'ImmortalSasuke_Skill04_05',
+    'setCmd = setTransport',
+    'ImmortalSasuke_Skill04_06',
+    'setHit = b_hit',    
+    'ImmortalSasuke_Skill04_07',
+    'setHit = b_hit',
+    'ImmortalSasuke_Skill04_08',
+    'setHit = b_hit',
+    'ImmortalSasuke_Skill04_09',
+    'setHit = b_hit',
+    'setDSound = Audio/Effect/blade_damage.ogg',
+    'ImmortalSasuke_Skill04_10',
+    'setSound = Audio/ImmortalSasuke/ImmortalSasuke_skill1_1.ogg',
+    'ImmortalSasuke_Skill01_01',
+    'setSound = Audio/ImmortalSasuke/ImmortalSasuke_skill1_2.ogg',
+    'ImmortalSasuke_Skill01_02',
+    'setChargeB = 196',
+    'ImmortalSasuke_Skill01_03',
+    'ImmortalSasuke_Skill01_04',
+    'setHit = bc_hit',
+    'ImmortalSasuke_Skill01_05',
+    'ImmortalSasuke_Skill01_06',
+    'setHit = bc_hit',
+    'setCmd = reInvincible',
+]
+
+[Skill05]
+type = 'cBuff'
+rangeX = 48
+rangeY = 13
+combatPoint = 8888
+frame = [
+    'setSound = Audio/ImmortalSasuke/ImmortalSasuke_skill1_1.ogg',
+    'ImmortalSasuke_Skill01_01',
+    'setSound = Audio/ImmortalSasuke/ImmortalSasuke_skill1_2.ogg',
+    'ImmortalSasuke_Skill01_02',
+    'setChargeB = 196',
+    'ImmortalSasuke_Skill01_03',
+    'ImmortalSasuke_Skill01_04',
+    'setHit = bc_hit',
+    'ImmortalSasuke_Skill01_05',
+    'ImmortalSasuke_Skill01_06',
+    'setHit = bc_hit',
+
+    'setSound = Audio/Effect/ougis.ogg',
+    'ImmortalSasuke_Skill04_01',
+    'ImmortalSasuke_Skill04_02',
+    'setSkillEffect = sharingan4',
+    'ImmortalSasuke_Skill04_03',
+    'setSound = Audio/ImmortalSasuke/ImmortalSasuke_skill4.ogg',
+    'setDelay = 20',
+    'ImmortalSasuke_Skill04_04',
+    'setCmd = findTarget',
+    'setTrap = Amaterasu',
+    'setSound = Audio/Effect/srg.ogg',
+    'ImmortalSasuke_Skill04_05',
+    'setCmd = setTransport',
+    'ImmortalSasuke_Skill04_06',
+    'ImmortalSasuke_Skill04_07',
+    'ImmortalSasuke_Skill04_08',
+    'ImmortalSasuke_Skill04_09',
+    'setHit = b_hit',
+    'setDSound = Audio/Effect/blade_damage.ogg',
+    'ImmortalSasuke_Skill04_10',
+    'setSound = Audio/Effect/ougis.ogg',
+    'ImmortalSasuke_Skill05_01',
+    'setDelay = 10',
+    'ImmortalSasuke_Skill05_02',
+    'setCmd = setInvincible',
+    'ImmortalSasuke_Skill05_03',
+    'setOugis = 10',
+    'ImmortalSasuke_Skill05_04',
+    'ImmortalSasuke_Skill05_05',
+    'ImmortalSasuke_Skill05_06',
+    'ImmortalSasuke_Skill05_07',
+    'setBuff = 18',
+    'setSound = Audio/Itachi/Itachi_skill5_1.ogg',
+    'setSkill = SasukeSusano',
+    'setCmd = reInvincible',
+]
+[Skill05.OnChange]
+speed = 155
+defense = 7500
+isArmored = true
+lockSkillOnly = true
+lock = [+4, +5]
+map.Idle = 4
+map.Walk = 3
+map.NAttack = 2
+
+[Spc01]
+type = 'aAttack'
+value = 550
+rangeX = 0
+rangeY = 48
+anim = {base = 'Hurt', returnIdle = true}
+frame = [
+    'ImmortalSasuke_Skill10_01',
+    'setHit = bc_hit',
+    'ImmortalSasuke_Skill10_02',
+    'setSound = Audio/ImmortalSasuke/ImmortalSasuke_skill10.ogg',
+    'ImmortalSasuke_Skill10_03',
+    'setHit = bc_hit',
+    'setHit = n_hit',
+    'ImmortalSasuke_Skill10_04',
+]
+
+[Spc02]
+type = 'nAttack'
+value = 1350
+rangeX = 156
+rangeY = 64
+anim = {base = 'NAttack'}
+frame = [
+    'setSkillAttack = 1',
+    'ImmortalSasuke_Skill11_01',
+    'ImmortalSasuke_Skill11_02',
+    'ImmortalSasuke_Skill11_03',
+    'ImmortalSasuke_Skill11_02',
+    'ImmortalSasuke_Skill11_01',
+    'ImmortalSasuke_Skill11_02',
+    'setHit = c_hit',
+    'setHit = n_hit',
+    'setDSound = Audio/Effect/damage_l.ogg',
+    'setDelay = 10',
+    'ImmortalSasuke_Skill11_03',
+    'setDelay = 10',
+]
+
+[Spc03]
+value = 1000
+rangeX = 128
+rangeY = 48
+anim = {base = 'Walk'}
+frame = [
+    'ImmortalSasuke_Skill12_01',
+    'setDelay = 10',
+    'ImmortalSasuke_Skill12_02',
+    'setDelay = 10',
+    'ImmortalSasuke_Skill12_03',
+    'setDelay = 10',
+    'ImmortalSasuke_Skill12_04',
+    'setDelay = 10',
+    'ImmortalSasuke_Skill12_05',
+    'setDelay = 10',
+    'ImmortalSasuke_Skill12_06',
+    'setDelay = 10',
+]
+
+[Spc04]
+anim = {base = 'Idle'}
+frame = [
+    'ImmortalSasuke_Skill11_01',
+    'ImmortalSasuke_Skill11_02',
+    'setDelay = 10',
+    'ImmortalSasuke_Skill11_03',
+    'setDelay = 10',
+    'ImmortalSasuke_Skill11_02',
+    'setDelay = 10',
+    'ImmortalSasuke_Skill11_01',
+    'setDelay = 10',
+    'ImmortalSasuke_Skill11_02',
+    'setDelay = 10',
+    'ImmortalSasuke_Skill11_03',
+    'setDelay = 10',
+]

@@ -1,0 +1,80 @@
+#
+# Copyright (C) 2013-2016 Zakume
+# Copyright (C) 2020-2022 Re
+#
+# https://game.naruto.re
+#
+
+name = 'PainFrog'
+hp = 5000
+hpBar.y = 40
+speed = 160
+
+[Idle]
+frame = [
+    'PainFrog_Idle_01',
+    'PainFrog_Walk_01',
+]
+
+[Walk]
+frame = [
+    'PainFrog_Walk_01',
+    'PainFrog_Walk_02',
+    'setDelay = 10',
+    'PainFrog_Walk_03',
+    'setDelay = 10',
+]
+
+[Hurt]
+frame = [
+    'setMove = 32',
+    'PainFrog_Knockdown_01',
+]
+
+[AirHurt]
+frame = [
+    'PainFrog_Knockdown_01',
+]
+
+[Knockdown]
+frame = [
+    'PainFrog_Knockdown_01',
+    'PainFrog_Knockdown_02',
+    'PainFrog_Knockdown_03',
+    'setDelay = 10',
+    'PainFrog_Knockdown_04',
+    'setDelay = 60',
+    'PainFrog_Idle_01',
+]
+
+[Float]
+frame = [
+    'PainFrog_Float_01',
+    'setDelay = 10',
+    'PainFrog_Knockdown_02',
+    'setDelay = 20',
+]
+
+[Dead]
+frame = [
+    'PainFrog_Knockdown_01',
+    'PainFrog_Knockdown_02',
+    'PainFrog_Knockdown_03',
+    'PainFrog_Knockdown_04',
+]
+
+[NAttack]
+type = 'nAttack'
+value = 40
+rangeX = 8
+rangeY = 8
+frame = [
+    'PainFrog_NAttack_01',
+    'setDelay = 10',
+    'PainFrog_NAttack_02',
+    'setDelay = 10',
+    'PainFrog_NAttack_03',
+    'PainFrog_NAttack_04',
+    'setHit = n_hit',
+    'setDelay = 10',
+]

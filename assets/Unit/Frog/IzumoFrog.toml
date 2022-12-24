@@ -1,0 +1,80 @@
+#
+# Copyright (C) 2013-2016 Zakume
+# Copyright (C) 2020-2022 Re
+#
+# https://game.naruto.re
+#
+
+name = 'IzumoFrog'
+hp = 5000
+hpBar.y = 40
+speed = 160
+
+[Idle]
+frame = [
+    'IzumoFrog_Idle_01',
+    'IzumoFrog_Walk_01',
+]
+
+[Walk]
+frame = [
+    'IzumoFrog_Walk_01',
+    'IzumoFrog_Walk_02',
+    'setDelay = 10',
+    'IzumoFrog_Walk_03',
+    'setDelay = 10',
+]
+
+[Hurt]
+frame = [
+    'setMove = 32',
+    'IzumoFrog_Knockdown_01',
+]
+
+[AirHurt]
+frame = [
+    'IzumoFrog_Knockdown_01',
+]
+
+[Knockdown]
+frame = [
+    'IzumoFrog_Knockdown_01',
+    'IzumoFrog_Knockdown_02',
+    'IzumoFrog_Knockdown_03',
+    'setDelay = 10',
+    'IzumoFrog_Knockdown_04',
+    'setDelay = 60',
+    'IzumoFrog_Idle_01',
+]
+
+[Float]
+frame = [
+    'IzumoFrog_Float_01',
+    'setDelay = 10',
+    'IzumoFrog_Knockdown_02',
+    'setDelay = 20',
+]
+
+[Dead]
+frame = [
+    'IzumoFrog_Knockdown_01',
+    'IzumoFrog_Knockdown_02',
+    'IzumoFrog_Knockdown_03',
+    'IzumoFrog_Knockdown_04',
+]
+
+[NAttack]
+type = 'nAttack'
+value = 40
+rangeX = 8
+rangeY = 8
+frame = [
+    'IzumoFrog_NAttack_01',
+    'setDelay = 10',
+    'IzumoFrog_NAttack_02',
+    'setDelay = 10',
+    'IzumoFrog_NAttack_03',
+    'IzumoFrog_NAttack_04',
+    'setHit = n_hit',
+    'setDelay = 10',
+]

@@ -1,0 +1,42 @@
+#
+# Copyright (C) 2013-2016 Zakume
+# Copyright (C) 2020-2022 Re
+#
+# https://game.naruto.re
+#
+
+name = 'FakeTobirama'
+
+[Idle]
+frame = [
+    'FakeTobirama_Move_08',
+]
+
+[NAttack]
+type = 'aAttack'
+value = 100
+rangeX = 48
+rangeY = 48
+frame = [
+    'setCmd = findTarget',
+    'setSkillEffect = Hiraishin2',
+    'setSound = Audio/Effect/hiraishin_effect.ogg',
+    'setCmd = setTransport',
+    'FakeTobirama_Move_01',
+    'FakeTobirama_Move_02',
+    'FakeTobirama_Move_03',
+    'FakeTobirama_Move_04',
+    'FakeTobirama_Move_05',
+    'setHit = ac_hit',
+    'setHit = ts_hit',
+    'setSkillEffect = Hiraishin2',
+    'setSound = Audio/Effect/hiraishin_effect2.ogg',
+    'setCmd = setTransport',
+    'FakeTobirama_Move_06',
+    'FakeTobirama_Move_07',
+    'FakeTobirama_Move_08',
+    'setHit = ac_hit',
+    'setDelay = 10',
+    'setSkillEffect = smk',
+    'setDestroy = 0',
+]
