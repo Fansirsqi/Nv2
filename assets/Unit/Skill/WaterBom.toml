@@ -18,7 +18,7 @@ rangeY = 48
 frame = [
     'WaterBom_Move_01',
     'setHit = b_hit',
-    'setDSound = Audio/Effect/water_effect.mp3',
+    'setSound = Audio/Effect/water_effect.mp3',
     'WaterBom_Move_02',
     'setHit = c_hit',
     'WaterBom_Move_03',

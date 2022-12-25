@@ -11,11 +11,11 @@
                 <key>offset</key>
                 <string>{0,-1}</string>
                 <key>rotated</key>
-                <true/>
+                <true />
                 <key>sourceColorRect</key>
                 <string>{{0,2},{60,29}}</string>
                 <key>sourceSize</key>
-                <string>{60,31}</string>
+                <string>{60,72}</string>
             </dict>
             <key>Kubi_Move_02</key>
             <dict>
@@ -24,11 +24,11 @@
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
-                <true/>
+                <true />
                 <key>sourceColorRect</key>
                 <string>{{0,0},{58,31}}</string>
                 <key>sourceSize</key>
-                <string>{58,31}</string>
+                <string>{58,72}</string>
             </dict>
             <key>Kubi_Move_03</key>
             <dict>
@@ -37,11 +37,11 @@
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
-                <false/>
+                <false />
                 <key>sourceColorRect</key>
                 <string>{{0,0},{52,31}}</string>
                 <key>sourceSize</key>
-                <string>{52,31}</string>
+                <string>{52,72}</string>
             </dict>
             <key>Kubi_Move_04</key>
             <dict>
@@ -50,11 +50,11 @@
                 <key>offset</key>
                 <string>{1,0}</string>
                 <key>rotated</key>
-                <true/>
+                <true />
                 <key>sourceColorRect</key>
                 <string>{{2,0},{44,31}}</string>
                 <key>sourceSize</key>
-                <string>{46,31}</string>
+                <string>{46,72}</string>
             </dict>
             <key>WaterBom_Move_01</key>
             <dict>
@@ -63,11 +63,11 @@
                 <key>offset</key>
                 <string>{0,1}</string>
                 <key>rotated</key>
-                <false/>
+                <false />
                 <key>sourceColorRect</key>
                 <string>{{0,10},{40,40}}</string>
                 <key>sourceSize</key>
-                <string>{40,62}</string>
+                <string>{40,92}</string>
             </dict>
             <key>WaterBom_Move_02</key>
             <dict>
@@ -76,11 +76,11 @@
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
-                <false/>
+                <false />
                 <key>sourceColorRect</key>
                 <string>{{0,2},{68,58}}</string>
                 <key>sourceSize</key>
-                <string>{68,62}</string>
+                <string>{68,92}</string>
             </dict>
             <key>WaterBom_Move_03</key>
             <dict>
@@ -89,11 +89,11 @@
                 <key>offset</key>
                 <string>{0,-2}</string>
                 <key>rotated</key>
-                <false/>
+                <false />
                 <key>sourceColorRect</key>
                 <string>{{0,4},{71,58}}</string>
                 <key>sourceSize</key>
-                <string>{71,62}</string>
+                <string>{71,92}</string>
             </dict>
             <key>WaterBom_Move_04</key>
             <dict>
@@ -102,11 +102,11 @@
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
-                <false/>
+                <false />
                 <key>sourceColorRect</key>
                 <string>{{0,2},{70,58}}</string>
                 <key>sourceSize</key>
-                <string>{70,62}</string>
+                <string>{70,92}</string>
             </dict>
             <key>WaterBom_Move_05</key>
             <dict>
@@ -115,11 +115,11 @@
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
-                <true/>
+                <true />
                 <key>sourceColorRect</key>
                 <string>{{0,2},{60,58}}</string>
                 <key>sourceSize</key>
-                <string>{60,62}</string>
+                <string>{60,92}</string>
             </dict>
             <key>WaterBom_Move_06</key>
             <dict>
@@ -128,11 +128,11 @@
                 <key>offset</key>
                 <string>{0,1}</string>
                 <key>rotated</key>
-                <true/>
+                <true />
                 <key>sourceColorRect</key>
                 <string>{{1,3},{56,54}}</string>
                 <key>sourceSize</key>
-                <string>{58,62}</string>
+                <string>{58,92}</string>
             </dict>
             <key>WaterBom_Move_07</key>
             <dict>
@@ -141,11 +141,11 @@
                 <key>offset</key>
                 <string>{1,3}</string>
                 <key>rotated</key>
-                <true/>
+                <true />
                 <key>sourceColorRect</key>
                 <string>{{2,0},{58,56}}</string>
                 <key>sourceSize</key>
-                <string>{60,62}</string>
+                <string>{60,92}</string>
             </dict>
             <key>WaterBullet_Move_01</key>
             <dict>
@@ -154,11 +154,11 @@
                 <key>offset</key>
                 <string>{0,3}</string>
                 <key>rotated</key>
-                <true/>
+                <true />
                 <key>sourceColorRect</key>
                 <string>{{0,11},{7,4}}</string>
                 <key>sourceSize</key>
-                <string>{7,32}</string>
+                <string>{7,72}</string>
             </dict>
             <key>WaterBullet_Move_02</key>
             <dict>
@@ -167,11 +167,11 @@
                 <key>offset</key>
                 <string>{0,3}</string>
                 <key>rotated</key>
-                <true/>
+                <true />
                 <key>sourceColorRect</key>
                 <string>{{0,11},{8,4}}</string>
                 <key>sourceSize</key>
-                <string>{8,32}</string>
+                <string>{8,72}</string>
             </dict>
             <key>WaterBullet_Move_03</key>
             <dict>
@@ -180,11 +180,11 @@
                 <key>offset</key>
                 <string>{0,3}</string>
                 <key>rotated</key>
-                <false/>
+                <false />
                 <key>sourceColorRect</key>
                 <string>{{0,3},{10,20}}</string>
                 <key>sourceSize</key>
-                <string>{10,32}</string>
+                <string>{10,72}</string>
             </dict>
             <key>WaterBullet_Move_04</key>
             <dict>
@@ -193,11 +193,11 @@
                 <key>offset</key>
                 <string>{0,3}</string>
                 <key>rotated</key>
-                <false/>
+                <false />
                 <key>sourceColorRect</key>
                 <string>{{0,0},{11,26}}</string>
                 <key>sourceSize</key>
-                <string>{11,32}</string>
+                <string>{11,72}</string>
             </dict>
             <key>WaterBullet_Move_05</key>
             <dict>
@@ -206,11 +206,11 @@
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
-                <true/>
+                <true />
                 <key>sourceColorRect</key>
                 <string>{{0,0},{13,32}}</string>
                 <key>sourceSize</key>
-                <string>{13,32}</string>
+                <string>{13,72}</string>
             </dict>
             <key>WaterBullet_Move_06</key>
             <dict>
@@ -219,11 +219,11 @@
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
-                <true/>
+                <true />
                 <key>sourceColorRect</key>
                 <string>{{0,0},{13,32}}</string>
                 <key>sourceSize</key>
-                <string>{13,32}</string>
+                <string>{13,72}</string>
             </dict>
         </dict>
         <key>metadata</key>

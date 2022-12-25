@@ -37,7 +37,7 @@ frame = [
     'Suigetsu_Hurt_01',
     'Suigetsu_Hurt_02',
     'Suigetsu_Hurt_03',
-    'setDSound = Audio/Suigetsu/suigetsu_hurt.ogg',
+    'setSound = Audio/Suigetsu/suigetsu_hurt.mp3',
 ]
 
 [AirHurt]
@@ -68,23 +68,21 @@ frame = [
 frame = [
     'Suigetsu_KnockDown_01',
     'Suigetsu_KnockDown_02',
-    'setDSound = Audio/Suigetsu/suigetsu_dead.ogg',
+    'setSound = Audio/Suigetsu/suigetsu_dead.mp3',
 ]
 
 [NAttack]
 
-type = 'spBuff'
+type = 'cBuff'
 value = 80
 rangeX = 0
 rangeY = 16
-cd = 0
-
 frame = [
     'Suigetsu_NAttack_01',
     'Suigetsu_NAttack_02',
     'Suigetsu_NAttack_03',
     'setHit = n_hit',
-    'setDSound = Audio/Effect/combo1.ogg',
+    'setSound = Audio/Effect/combo1.mp3',
     'Suigetsu_NAttack_04',
     'Suigetsu_NAttack_05',
     'Suigetsu_NAttack_06',
@@ -93,14 +91,14 @@ frame = [
     'Suigetsu_NAttack_08',
     'Suigetsu_NAttack_09',
     'setHit = n_hit',
-    'setDSound = Audio/Effect/combo2.ogg',
+    'setSound = Audio/Effect/combo2.mp3',
     'Suigetsu_NAttack_10',
     'Suigetsu_NAttack_11',
     'Suigetsu_NAttack_12',
     'setHit = n_hit',
     'setMove = 16',
     'Suigetsu_NAttack_13',
-    'setDSound = Audio/Suigetsu/suigetsu_combo.ogg',
+    'setSound = Audio/Suigetsu/suigetsu_combo.mp3',
     'Suigetsu_NAttack_14',
     'Suigetsu_NAttack_15',
     'setHit = n_hit',
@@ -113,24 +111,31 @@ frame = [
     'setDelay = 20',
     'setBuff = 17',
 ]
+[NAttack.OnChange]
+isArmored = true
+lockSkillOnly = true
+hpBarY = 90
+lock = [+4, +5]
+map.Idle = 1
+map.Walk = 2
+map.NAttack = 3
+
 
 [Skill01]
-
 type = 'cAttack'
 value = 160
 rangeX = 64
 rangeY = 48
 cd = 10
-
 frame = [
     'Suigetsu_Skill01_01',
-    'setDSound = Audio/Suigetsu/suigetsu_skill1.ogg',
+    'setSound = Audio/Suigetsu/suigetsu_skill1.mp3',
     'setDelay = 10',
     'Suigetsu_Skill01_02',
     'setHit = o_hit',
     'Suigetsu_Skill01_03',
     'setChargeB = 128',
-    'setDSound = Audio/Effect/blade_damage.ogg',
+    'setSound = Audio/Effect/blade_damage.mp3',
     'Suigetsu_Skill01_04',
     'setHit = ct_hit',
     'setChargeB = 140',
@@ -139,15 +144,13 @@ frame = [
 ]
 
 [Skill02]
-
 type = 'aAttack'
 value = 480
 rangeX = 128
 rangeY = 16
 cd = 15
-
 frame = [
-    'setDSound = Audio/Effect/ougis.ogg',
+    'setSound = Audio/Effect/ougis.mp3',
     'setCmd = setInvincible',
     'setCmd = findTarget',
     'Suigetsu_Skill03_01',
@@ -158,7 +161,7 @@ frame = [
     'setCmd = setTransport',
     'Suigetsu_Skill02_01',
     'setFlipped = 10',
-    'setDSound = Audio/Suigetsu/suigetsu_skill2.ogg',
+    'setSound = Audio/Suigetsu/suigetsu_skill2.mp3',
     'Suigetsu_Skill02_02',
     'setHit = ct_hit',
     'setChargeB = -220',
@@ -194,15 +197,13 @@ frame = [
 ]
 
 [Skill03]
-
 type = 'aAttack'
 value = 700
 rangeX = 128
 rangeY = 25
 cd = 25
-
 frame = [
-    'setDSound = Audio/Suigetsu/suigetsu_skill4.ogg',
+    'setSound = Audio/Suigetsu/suigetsu_skill4.mp3',
     'setFont = stp',
     'Suigetsu_Skill04_01',
     'setHit = ct_hit',
@@ -234,18 +235,18 @@ cd = 1
 frame = [
     'setHit = o2_hit',
     'setCmd = setCounter',
-    'setDSound = Audio/Suigetsu/suigetsu_skill3_1.ogg',
+    'setSound = Audio/Suigetsu/suigetsu_skill3_1.mp3',
     'Suigetsu_Skill05_07',
     'setHit = c_hit',
     'Suigetsu_Skill05_08',
     'setChargeB = 128',
     'Suigetsu_Skill05_10',
-    'setDSound = Audio/Suigetsu/suigetsu_skill5_4.ogg',
+    'setSound = Audio/Suigetsu/suigetsu_skill5_4.mp3',
     'setHit = c_hit',
     'Suigetsu_Skill05_11',
     'setHit = c_hit',
     'Suigetsu_Skill05_12',
-    'setDSound = Audio/Effect/blade_damage.ogg',
+    'setSound = Audio/Effect/blade_damage.mp3',
     'setHit = o_hit',
     'Suigetsu_Skill05_13',
     'setHit = c_hit',
@@ -254,11 +255,11 @@ frame = [
     'Suigetsu_Skill05_17',
     'setShadow = 10',
     'Suigetsu_Skill05_18',
-    'setDSound = Audio/Suigetsu/suigetsu_skill5_3.ogg',
+    'setSound = Audio/Suigetsu/suigetsu_skill5_3.mp3',
     'setHit = c_hit',
     'Suigetsu_Skill05_19',
     'setHit = c_hit',
-    'setDSound = Audio/Effect/blade_damage.ogg',
+    'setSound = Audio/Effect/blade_damage.mp3',
     'Suigetsu_Skill05_20',
     'setHit = c_hit',
     'Suigetsu_Skill05_22',
@@ -270,7 +271,7 @@ frame = [
     'Suigetsu_Skill05_24',
     'setShadow = 10',
     'setHit = f2_hit',
-    'setDSound = Audio/Effect/blade_damage.ogg',
+    'setSound = Audio/Effect/blade_damage.mp3',
     'Suigetsu_Skill05_25',
     'setShadow = 10',
     'setHit = c_hit',
@@ -290,7 +291,7 @@ frame = [
     'setShadow = 10',
     'setHit = c_hit',
     'setHit = ac_hit',
-    'setDSound = Audio/Effect/blade_damage.ogg',
+    'setSound = Audio/Effect/blade_damage.mp3',
     'Suigetsu_Skill05_31',
     'setShadow = 10',
     'setHit = c_hit',
@@ -307,7 +308,7 @@ frame = [
     'setHit = c_hit',
     'setChargeB = 48',
     'setHit = ac_hit',
-    'setDSound = Audio/Effect/blade_damage.ogg',
+    'setSound = Audio/Effect/blade_damage.mp3',
     'Suigetsu_Skill05_36',
     'setShadow = 10',
     'setHit = c_hit',
@@ -332,7 +333,7 @@ frame = [
     'Suigetsu_Skill05_55',
     'setShadow = 10',
     'setHit = c_hit',
-    'setDSound = Audio/Suigetsu/suigetsu_skill5_5.ogg',
+    'setSound = Audio/Suigetsu/suigetsu_skill5_5.mp3',
     'setDelay = 10',
     'setHit = c_hit',
     'Suigetsu_Skill05_56',
@@ -356,7 +357,7 @@ rangeY = 48
 cd = 1
 
 frame = [
-    'setDSound = Audio/Effect/ougis.ogg',
+    'setSound = Audio/Effect/ougis.mp3',
     'Suigetsu_Skill05_01',
     'Suigetsu_Skill05_02',
     'Suigetsu_Skill05_03',
@@ -373,13 +374,13 @@ frame = [
     'Suigetsu_Skill05_08',
     'setChargeB = 128',
     'Suigetsu_Skill05_10',
-    'setDSound = Audio/Suigetsu/suigetsu_skill5_4.ogg',
+    'setSound = Audio/Suigetsu/suigetsu_skill5_4.mp3',
     'setHit = c_hit',
     'Suigetsu_Skill05_11',
     'Suigetsu_Skill05_12',
     'setCmd = reInvincible',
     #  <!--第一段伤害后取消无敌状态-->
-    'setDSound = Audio/Effect/blade_damage.ogg',
+    'setSound = Audio/Effect/blade_damage.mp3',
     'setHit = o_hit',
     'Suigetsu_Skill05_13',
     'Suigetsu_Skill05_16',
@@ -387,11 +388,11 @@ frame = [
     'Suigetsu_Skill05_17',
     'setShadow = 10',
     'Suigetsu_Skill05_18',
-    'setDSound = Audio/Suigetsu/suigetsu_skill5_3.ogg',
+    'setSound = Audio/Suigetsu/suigetsu_skill5_3.mp3',
     'setHit = c_hit',
     'Suigetsu_Skill05_19',
     'setHit = c_hit',
-    'setDSound = Audio/Effect/blade_damage.ogg',
+    'setSound = Audio/Effect/blade_damage.mp3',
     'Suigetsu_Skill05_20',
     'Suigetsu_Skill05_22',
     'setShadow = 10',
@@ -399,11 +400,11 @@ frame = [
     'setShadow = 10',
     'Suigetsu_Skill05_24',
     'setShadow = 10',
-    'setHit = fb_hit',
-    'setDSound = Audio/Effect/blade_damage2.ogg',
+    'setHit = f2_hit',
+    'setSound = Audio/Effect/blade_damage2.mp3',
     'Suigetsu_Skill05_25',
     'setShadow = 10',
-    'setHit = fb_hit',
+    'setHit = f2_hit',
     'Suigetsu_Skill05_26',
     'setShadow = 10',
     'setHit = ac_hit',
@@ -415,7 +416,7 @@ frame = [
     'Suigetsu_Skill05_30',
     'setShadow = 10',
     'setHit = ac_hit',
-    'setDSound = Audio/Effect/blade_damage2.ogg',
+    'setSound = Audio/Effect/blade_damage2.mp3',
     'Suigetsu_Skill05_31',
     'setShadow = 10',
     'Suigetsu_Skill05_32',
@@ -427,7 +428,7 @@ frame = [
     'setShadow = 10',
     'setChargeB = 48',
     'setHit = ac_hit',
-    'setDSound = Audio/Effect/blade_damage2.ogg',
+    'setSound = Audio/Effect/blade_damage2.mp3',
     'Suigetsu_Skill05_36',
     'setShadow = 10',
     'Suigetsu_Skill05_37',
@@ -444,7 +445,7 @@ frame = [
     'setShadow = 10',
     'Suigetsu_Skill05_55',
     'setShadow = 10',
-    'setDSound = Audio/Suigetsu/suigetsu_skill5_5.ogg',
+    'setSound = Audio/Suigetsu/suigetsu_skill5_5.mp3',
     'setDelay = 10',
     'Suigetsu_Skill05_56',
     'Suigetsu_Skill05_57',
@@ -491,9 +492,8 @@ frame = [
 ]
 
 [Spc03]
-
 type = 'aAttack'
-value = 90
+value = 120
 rangeX = 10
 rangeY = 32
 cd = 0
@@ -501,9 +501,9 @@ frame = [
     'Suigetsu_Skill03_06',
     'Suigetsu_Skill03_08',
     'setHit = f2_hit',
-    'setDSound = Audio/Effect/blade_damage.ogg',
+    'setSound = Audio/Effect/blade_damage.mp3',
     'setActionResume = 20',
-    'setDSound = Audio/Suigetsu/suigetsu_skill3_2.ogg',
+    'setSound = Audio/Suigetsu/suigetsu_skill3_2.mp3',
     'Suigetsu_Skill03_09',
     'setShadow = 10',
     'setJump = true',
@@ -517,14 +517,14 @@ frame = [
     'Suigetsu_Skill03_13',
     'setShadow = 10',
     'setHit = ac_hit',
-    'setDSound = Audio/Effect/blade_damage2.ogg',
+    'setSound = Audio/Effect/blade_damage2.mp3',
     'setChargeB = 280',
     'setHit = ac_hit',
     'Suigetsu_Skill05_37',
     'setShadow = 10',
     'Suigetsu_Skill05_38',
     'setHit = ac_hit',
-    'setDSound = Audio/Effect/blade_damage2.ogg',
+    'setSound = Audio/Effect/blade_damage2.mp3',
     'Suigetsu_Skill05_50',
     'setHit = ac_hit',
     'setFlipped = 10',
@@ -533,32 +533,32 @@ frame = [
     'setShadow = 10',
     'Suigetsu_Skill05_52',
     'setShadow = 10',
-    'setChargeB = 120',
+    'setChargeB = 160',
     'setHit = o_hit',
-    'setDSound = Audio/Effect/blade_damage2.ogg',
+    'setSound = Audio/Effect/blade_damage2.mp3',
     'setChargeB = 20',
     'Suigetsu_Skill05_53',
     'setShadow = 10',
     'Suigetsu_Skill05_54',
     'setHit = o_hit',
-    'setDSound = Audio/Effect/blade_damage.ogg',
+    'setSound = Audio/Effect/blade_damage.mp3',
     'setChargeB = 50',
     'Suigetsu_Skill05_55',
     'setShadow = 10',
-    'setDSound = Audio/Suigetsu/suigetsu_skill5_5.ogg',
+    'setSound = Audio/Suigetsu/suigetsu_skill5_5.mp3',
     'Suigetsu_Skill05_56',
     'setShadow = 10',
     'setHit = o_hit',
     'Suigetsu_Skill05_57',
     'setChargeB = 60',
     'setHit = o_hit',
-    'setDSound = Audio/Effect/blade_damage2.ogg',
+    'setSound = Audio/Effect/blade_damage2.mp3',
     'Suigetsu_Skill05_58',
     'setShadow = 10',
     'setHit = b_hit',
     'Suigetsu_Skill05_59',
     'setHit = f2_hit',
-    'setDSound = Audio/Effect/blade_damage2.ogg',
+    'setSound = Audio/Effect/blade_damage2.mp3',
     'Suigetsu_Skill05_60',
     'setShadow = 10',
     'setCmd = setCounter',
